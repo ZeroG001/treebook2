@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Treebook2</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+
+
+</div>
+<title>Treebook2</title>
+<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+	<!-- NavBar -->
+	<ul class="nav nav-pills">
+		<li class="active"><%= link_to "Statuses", statuses_path %></li>
+		<li><a href="#"> Login </a></li>
+		<li><a href="#"> Sign In </a></li>
+		<li><a href="#"> Sign Out </a></li>
+	</ul>
+	<!-- Nav Bar end -->
+
+	<%= yield %>
+
+	
+
+</div>
 
 </body>
 </html>
