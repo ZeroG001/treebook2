@@ -11,21 +11,27 @@
 </head>
 <body>
 
-<div class="container">
-	<!-- NavBar -->
-	<ul class="nav nav-pills">
-		<li class="active"><%= link_to "Statuses", statuses_path %></li>
-		<li><a href="#"> Login </a></li>
-		<li><a href="#"> Sign In </a></li>
-		<li><a href="#"> Sign Out </a></li>
-	</ul>
-	<!-- Nav Bar end -->
 
-	<%= yield %>
 
-	
+	<div class="container">
 
-</div>
+		<p class="notice"><%= notice %></p>
+		<p class="alert"><%= alert %></p>
+		
+		<!-- NavBar -->
+		<ul class="nav nav-pills">
+			<li class="active"><%= link_to "Statuses", statuses_path %></li>
+			<li><a href="#"> Login </a></li>
+			<li><a href="#"> Sign In </a></li>
+			<li><a href="#"> Sign Out </a></li>
+		</ul>
+		<!-- Nav Bar end -->
+
+		<%= yield %>
+
+		
+
+	</div>
 
 </body>
 </html>
