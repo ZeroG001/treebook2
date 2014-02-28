@@ -21,9 +21,9 @@
 		<!-- NavBar -->
 		<ul class="nav nav-pills">
 			<li class="active"><%= link_to "Statuses", statuses_path %></li>
-			<li><a href="#"> Login </a></li>
-			<li><a href="#"> Sign In </a></li>
-			<li><a href="#"> Sign Out </a></li>
+			<li><%= link_to "Log In", new_user_session_path  %></li>
+			<li><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></li>
+			<li><%= link_to 'Sign Up', new_user_registration_path %></li>
 		</ul>
 		<!-- Nav Bar end -->
 
