@@ -8,6 +8,8 @@ gem 'sqlite3'
 gem 'devise'
 gem 'simple_form'
 
+#Installed awesome_print so that rails console look neater
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
